@@ -648,14 +648,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .page-logo {
-    margin-right: 120px;
-  }
-
   .menu {
     display: flex;
     gap: 40px;
@@ -722,16 +714,8 @@ body {
     column-gap: 24px;
   }
 
-  .features-list-item {
-    width: calc((100% - 24px) / 2);
-  }
-
   .features-title {
     text-align: left;
-  }
-
-  .team-container {
-    max-width: 584px;
   }
 
   .team-list {
@@ -741,27 +725,11 @@ body {
     row-gap: 64px;
   }
 
-  .team-list-item {
-    width: calc((100% - 24px) / 2);
-  }
-
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-  }
-
-  .portfolio-list-item {
-    width: calc((100% - 24px) / 2);
-  }
-
-  .footer-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    align-items: baseline;
-    max-width: 584px;
   }
 
   .footer-logo {
@@ -795,6 +763,14 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .page-logo {
+    margin-right: 120px;
+  }
+
   .hero-section {
     background-image: linear-gradient(#2e2f42b3, #2e2f42b3),
       url(../images/hero-img-t.jpg);
@@ -803,9 +779,24 @@ body {
     max-width: 768px;
   }
 
+  .features-list-item,
+  .team-list-item,
+  .portfolio-list-item,
   .footer-logo-div,
   .social-media-div {
     width: calc((100% - 24px) / 2);
+  }
+
+  .team-container {
+    max-width: 584px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    align-items: baseline;
+    max-width: 584px;
   }
 }
 
@@ -968,7 +959,8 @@ body {
   }
 
   .footer-container {
-    flex-wrap: no-wrap;
+    align-items: baseline;
+    flex-direction: row;
     column-gap: 80px;
     max-width: 1158px;
   }
